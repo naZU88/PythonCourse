@@ -7,21 +7,21 @@
 #     3
 #     -> 1
 
-# n = int(input("Введите кол-во элементов массива: "))
-# massive = list()
-# print("Введите элементы массива: ")
+n = int(input("Введите кол-во элементов массива: "))
+massive = list()
+print("Введите элементы массива: ")
 
-# for i in range(n):
-#     massive.append(int(input()))
+for i in range(n):
+    massive.append(int(input()))
 
-# x = int(input("Введите элемент x: "))
+x = int(input("Введите элемент x: "))
 
-# count = 0
-# for i in range(n):
-#     if massive[i] == x:
-#         count = count +1
+count = 0
+for i in range(n):
+    if massive[i] == x:
+        count = count +1
 
-# print(count)
+print(count)
 
 # Задача 18: Требуется найти в массиве A[1..N] самый близкий по величине элемент к заданному числу X. 
 # Пользователь в первой строке вводит натуральное число N – количество элементов в массиве. 
@@ -32,24 +32,24 @@
 #     6
 #     -> 5
 
-# n = int(input("Введите кол-во элементов массива: "))
-# massive = list()
-# print("Введите элементы массива: ")
+n = int(input("Введите кол-во элементов массива: "))
+massive = list()
+print("Введите элементы массива: ")
 
-# for i in range(n):
-#     massive.append(int(input()))
+for i in range(n):
+    massive.append(int(input()))
 
-# x = int(input("Введите нужное число: "))
+x = int(input("Введите нужное число: "))
 
-# maxClose = abs(x-massive[0])
-# resultNumber = massive[0]
-# for i in range(n):
-#      diff = abs(x-massive[i])
-#      if diff < maxClose:
-#           maxClose = diff
-#           resultNumber = massive[i]
+maxClose = abs(x-massive[0])
+resultNumber = massive[0]
+for i in range(n):
+     diff = abs(x-massive[i])
+     if diff < maxClose:
+          maxClose = diff
+          resultNumber = massive[i]
 
-# print(resultNumber)
+print(resultNumber)
          
 
 # *Задача 20: * В настольной игре Скрабл (Scrabble) каждая буква имеет определенную ценность. 

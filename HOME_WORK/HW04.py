@@ -3,39 +3,39 @@
 # Пользователь вводит 2 числа. n - кол-во элементов первого множества. m - кол-во элементов 
 # второго множества. Затем пользователь вводит сами элементы множеств.
 
-# n = int(input("Введите кол-во элементов первого множества: "))
-# m = int(input("Введите кол-во элементов второго множества: "))
-# massive_1 = list()
-# massive_2 = list()
+n = int(input("Введите кол-во элементов первого множества: "))
+m = int(input("Введите кол-во элементов второго множества: "))
+massive_1 = list()
+massive_2 = list()
 
-# for i in range(n):
-#     massive_1.append(int(input("Введите элемент первого множества: ")))
+for i in range(n):
+    massive_1.append(int(input("Введите элемент первого множества: ")))
 
-# for i in range(m):
-#     massive_2.append(int(input("Введите элемент второго множества: ")))
-# print(massive_1)
-# print(massive_2)
+for i in range(m):
+    massive_2.append(int(input("Введите элемент второго множества: ")))
+print(massive_1)
+print(massive_2)
 
-# massive_1 = set(massive_1)
-# massive_2 = set(massive_2)
-# massive_3 = massive_1.union(massive_2)
-# massive_3 = list(massive_3)
-# print(massive_3)
+massive_1 = set(massive_1)
+massive_2 = set(massive_2)
+massive_3 = massive_1.union(massive_2)
+massive_3 = list(massive_3)
+print(massive_3)
 
-# min = massive_3[0]
-# index = 0
-# finalMassive = list()
+min = massive_3[0]
+index = 0
+finalMassive = list()
 
-# for i in range(len(massive_3)):
-#     min = massive_3[0]
-#     index = 0
-#     for j in range(len(massive_3)):
-#         if massive_3[j]<=min:
-#             min = massive_3[j]
-#             index = j
-#     massive_3.pop(index)
-#     finalMassive.append(min)
-#     print(finalMassive)
+for i in range(len(massive_3)):
+    min = massive_3[0]
+    index = 0
+    for j in range(len(massive_3)):
+        if massive_3[j]<=min:
+            min = massive_3[j]
+            index = j
+    massive_3.pop(index)
+    finalMassive.append(min)
+    print(finalMassive)
     
     
 

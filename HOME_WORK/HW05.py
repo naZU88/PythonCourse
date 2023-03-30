@@ -4,14 +4,14 @@
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8 
 
-# def stepen(a, b):
-#     if b == 0:
-#         return 1
-#     return a*(stepen(a, b-1))
+def stepen(a, b):
+    if b == 0:
+        return 1
+    return a*(stepen(a, b-1))
 
-# a = int(input())
-# b = int(input())
-# print(stepen(a, b))
+a = int(input())
+b = int(input())
+print(stepen(a, b))
 
 # Задача 28: Напишите рекурсивную функцию sum(a, b), возвращающую сумму двух целых неотрицательных чисел. 
 # Из всех арифметических операций допускаются только +1 и -1. Также нельзя использовать циклы.
